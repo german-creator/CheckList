@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CheckList</string>
+    <string name="title_activity_home">Чек-листы</string>
+</resources>

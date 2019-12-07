@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/Dialog_Create_EditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:hint="Название чек-листа"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/transparent">
+
+
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical|right"
+            android:text="Напоминание:"
+            android:textSize="18sp"></TextView>
+
+        <Button
+            android:id="@+id/Dialog_Create_TextView"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical|left"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:focusable="false"
+            android:text="Нет"
+            android:textColor="@color/text_black"
+            android:textSize="16sp"
+            app:strokeWidth="1dp"
+            android:backgroundTintMode="src_over"
+            app:backgroundTint = "@color/background"
+            app:strokeColor="@color/colorPrimaryLight"
+            app:cornerRadius="0dp"
+            android:layout_margin="20dp"
+            android:textAllCaps="false"
+            ></Button>
+
+        <ImageView
+            android:id="@+id/Dialog_Create_ImageView"
+            android:src="@drawable/ic_clear_black_24dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/Dialog_Create_ListView"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="400dp"
+        android:divider="@android:color/transparent"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginBottom="20dp"
+        >
+
+
+        <Button
+            android:id="@+id/Dialog_Create_Button_Del"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:text="Удалить"
+            android:layout_gravity="left"
+            style="@style/Button.Style"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_weight="1"
+            app:cornerRadius="100dp"
+
+            ></Button>
+
+        <FrameLayout
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"></FrameLayout>
+
+        <Button
+            android:id="@+id/Dialog_Create_Button"
+            style="@style/Button.Style"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_gravity="right"
+            android:text="Сохранить"
+            android:layout_weight="1"
+            app:cornerRadius="100dp"
+
+            ></Button>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
